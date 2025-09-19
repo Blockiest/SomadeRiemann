@@ -37,3 +37,5 @@ $$\int_0^{\frac{\pi}{2}}sin(2x)dx$$
 Aparecerá a mensagem no terminal comparando o valor esperado e o calculado. Lembrando: quanto menor o dx, que neste caso é "1e-7", ou $10^{-7}$, mais preciso o cálculo.
 
 ## Vídeo rodando o código
+
+https://www.youtube.com/watch?v=zKwg5RmKGEo
