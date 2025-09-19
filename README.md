@@ -26,7 +26,7 @@ Caso o usuário queira fazer um teste com uma função própria num intervalo pr
 
 `auto funcao_qualquer = [](double x){return sin(2x); };`
 
-Em seguida, imprima o cálculo no terminal desse modo:
+Em seguida, imprima o cálculo no terminal ao escrever isso na linha abaixo:
 
 `cout << fixed << setprecision(10) << computar_soma_Riemann(funcao_qualquer, o, pi/2, 1e-7);`
 
