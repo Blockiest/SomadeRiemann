@@ -22,19 +22,19 @@ O seguinte código aproxima a área do gráfico de uma função qualquer e possu
   - Função ímpar de intervalo simétrico: $f(x) = x^5 - x^3 + 7x$
 
 ## Input
-Caso o usuário queira fazer um teste com uma função própria num intervalo próprio, ele deve, primeiramente, declarar sua função matemática na *main*. Digamos que se queira saber a soma de Riemann da função $f(x) = \sin{2x}$ no intervalo de $0$ a $\frac{\pi}{2}$. Digamos, ainda, que ela saiba que o resultado da integral é $1$. Nesse caso, declare na função *main*:
+Caso o usuário queira fazer um teste com uma função própria num intervalo próprio, ele deve, primeiramente, declarar sua função matemática na *main*. Digamos que se queira saber a soma de Riemann da função $f(x) = \sin{2x}$ no intervalo de $0$ a $\frac{\pi}{2}$. Digamos, ainda, que ele não saiba o resultado esperado dessa integral. Nesse caso, declare na função *main*:
 
 `auto funcao_qualquer = [](double x){return sin(2x); };`
 
-Em seguida, chame a função teste:
+Em seguida, imprima o cálculo no terminal desse modo:
 
-`testar_funcao(funcao_qualquer, 0, pi/2, 1e-7, 1.0, "funcao qualquer");`
+`cout << fixed << setprecision(10) << computar_soma_Riemann(funcao_qualquer, o, pi/2, 1e-7);`
 
 Em outros termos, aproximar-se-á:
 
 $$\int_0^{\frac{\pi}{2}}sin(2x)dx$$
 
-Aparecerá a mensagem no terminal comparando o valor esperado e o calculado. Lembrando: quanto menor o dx, que neste caso é "1e-7", ou $10^{-7}$, mais preciso o cálculo.
+Aparecerá uma mensagem no terminal acusando a aproximação. O trecho "*fixed << setprecision(10)*" fará o código imprimir 10 casas decimais após a vírgula. Lembrando: quanto menor o dx, que neste caso é "1e-7", ou $10^{-7}$, mais preciso o cálculo.
 
 ## Vídeo rodando o código
 
